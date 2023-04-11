@@ -12,8 +12,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  * The result should be [-1, 150, 160, 170, -1, -1, 180, 190]
  */
 function sortByHeight(arr) {
-  let sortedArr = arr.filter((element) => element != -1); //создаём новый массив без элемента -1
-  sortedArr.sort((a, b) => b - a); //сортируем массив по убыванию
+  let sortedArr = arr.filter((element) => element != -1);
+  sortedArr.sort((a, b) => b - a);
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== -1) {
       arr[i] = sortedArr.pop();
