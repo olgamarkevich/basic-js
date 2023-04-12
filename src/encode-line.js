@@ -21,7 +21,7 @@ function encodeLine(str) {
       count = 1;
     }
   }
-  return strNew.replace(/1/g, ''); //находим 1 в новой строке и заменяем их ''
+  return strNew.replace(/1/g, '');
 }
 
 module.exports = {
